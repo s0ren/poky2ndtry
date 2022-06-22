@@ -64,4 +64,12 @@ I undermappen `poky` som vi lige har lavet med `git subtree add ...` skal vi hav
 Man skal være i projektet rod, for at køre kommandoen.
 Bemærk at det skal være branchen  _`kirkstone`_.
 
-    git subtree add -P poky/meta-raspberrypi git://git.yoctoproject.org/meta-raspberrypi kirkstone -m "meta-raspberrypi kirkstone hentet"
+    git subtree add -P poky/meta-raspberrypi --squash git://git.yoctoproject.org/meta-raspberrypi kirkstone -m "meta-raspberrypi kirkstone hentet"
+
+## Ny branch
+
+For at holde en adskillese mellem de indhentningen af kode til subtrees, og det viddere arbejde, laver jeg et subtree, igen:
+
+    git checkout -b first_raspi
+
+ 
