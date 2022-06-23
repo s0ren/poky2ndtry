@@ -8,6 +8,7 @@ pstage/
 scripts/oe-git-proxy-socks
 sources/
 meta-*/
+!meta-raspberrypi/
 buildtools/
 !meta-skeleton
 !meta-selftest
